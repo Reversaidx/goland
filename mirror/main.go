@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	str_1 := "kurwa"
+	str_1 := os.Args[1]
 
 	lenght := len(str_1)
 	slice := make([]byte, lenght)
@@ -14,4 +17,3 @@ func main() {
 	}
 	fmt.Printf(string(slice))
 }
-
